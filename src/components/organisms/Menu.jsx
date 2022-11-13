@@ -7,6 +7,7 @@ const theme = {
 const MenuStyle = styled.a`
   /* This renders the buttons above... Edit me! */
   display: inline-block;
+  display:none;
   border-radius: 3px;
   padding: 0.5rem 0;
   margin: 0.5rem 1rem;

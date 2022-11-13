@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import PlayListRow from "../molecules/PlaylistRow";
 class Playlist extends React.Component {
    
     // Constructor 
@@ -23,7 +24,7 @@ class Playlist extends React.Component {
             const config = {
                 baseUrl:"https://api.spotify.com/",
                 path:"v1/me/playlists",
-                token:"token"
+                token:"BQB-t1d75r1EfgvrJ0tAYt1z5me1iI1Lr0LFq09Evb3E8OcUN8D2OG9A_3brllKSRTBQL8r_qTVmsrGI2-kdkD-ct54RAHWm65er0vRsMEI8RwWWci4BmhD2wUk43CRd0SUHgQdeYxxKv2Vwy-voQTZ-vqITCywBe2Si2HJGxhL3ALiaasWLfQW-GEsTpZyMbRg9mbHQZniDysek"
             }
 
             let url = () => {
@@ -129,35 +130,7 @@ class Playlist extends React.Component {
             {
                 items.map((item, i) => {
                     return ( 
-                 
-                <li style={{
-         
-                    width:"100vw",
-                    listStyle:'none',
-                    backgroundColor: i % 2 ?  'rgba(255,255,255, .05)' :'transparent',
-                    display:'flex'
-                }} key = { item.id } >
-                    <div style={{
-                        maxWidth:"20vw",
-                        width:"20vw",
-                    }}>
-                        {item?.picture?.custom?.url ? (<img style={{
-                            width: "inherit",
-                            height:"inherit",
-                            borderRadius:"10px"
-                        }}src={item.picture.custom.url}/>) : <img src={item.picture.custom.url}/>}
-                    </div>
-                    <div   
-                        style={
-                            {
-                                color:"white"
-                            }
-                        }
-                        >
-                        <p>{item.name}</p>
-                        {}
-                    </div>
-                </li>
+                        <PlayListRow item={item} i={i} key={item.id}></PlayListRow>                 
                 )})
             }
         </div>
