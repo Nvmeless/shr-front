@@ -52,11 +52,11 @@ h3{
 }
 
 div.bar {
-    width: 74%;
+    width: 90%;
     height: 4px;
     left: 19px;
     top: 118px;
-    margin: 4%;
+    margin: 0%;
 
     background: #CEC7A2;
     border-radius: 16px;
