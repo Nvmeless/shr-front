@@ -1,0 +1,74 @@
+body {
+    font-family: Arial;
+    background-color: #1E1E1E;
+}
+
+.row{
+    display: flex;
+    margin-left: 0%;
+    align-items: center;
+}
+
+.heart_icon{
+    width: 28px;
+    height: 25px;
+    left: 250px;
+    top: 138px;
+    background: #F3E568;
+    border: 3px solid #F3E568;
+}
+
+.title_button{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin-left: 0%;
+}
+
+
+.cover {
+    width: 8%;
+    border-radius: 20%;
+    padding: 1%;
+    margin-left: 9px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 7px;
+}
+.light {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+h1{
+    color:white;
+    font-weight: bold;
+    margin-left: 5%;
+    font-size: 400%;
+}
+
+h2{
+    color:white;
+    font-size: 200%;
+    margin-top: 17px;
+    margin-bottom: 0%;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 100%;
+    margin-top: 0%;
+    margin-bottom: 17px;
+    color:#5F5E5E;
+    font-weight: lighter;
+}
+
+div.bar {
+    width: 90%;
+    height: 4px;
+    left: 19px;
+    top: 118px;
+    margin: 0%;
+
+    background: #CEC7A2;
+    border-radius: 16px;
+}
